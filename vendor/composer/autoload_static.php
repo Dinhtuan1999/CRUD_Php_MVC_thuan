@@ -24,6 +24,7 @@ class ComposerStaticInit18dbeb7a2cb51f7a756c0ea2a2caba5e
         'App\\Controllers\\CartController' => __DIR__ . '/../..' . '/src/Controllers/CartController.php',
         'App\\Models\\CartModel' => __DIR__ . '/../..' . '/src/Models/CartModel.php',
         'App\\Models\\DBConnect' => __DIR__ . '/../..' . '/src/Models/DBConnect.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

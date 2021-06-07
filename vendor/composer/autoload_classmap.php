@@ -9,4 +9,5 @@ return array(
     'App\\Controllers\\CartController' => $baseDir . '/src/Controllers/CartController.php',
     'App\\Models\\CartModel' => $baseDir . '/src/Models/CartModel.php',
     'App\\Models\\DBConnect' => $baseDir . '/src/Models/DBConnect.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

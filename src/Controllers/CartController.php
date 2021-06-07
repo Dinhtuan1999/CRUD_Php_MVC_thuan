@@ -22,23 +22,18 @@ class CartController
 
     public function add()
     {
-        if (!empty($_POST['product_name'])
-            && !empty($_POST['product_price'])
-            && !empty($_FILES['colors'])
-            && !empty($_POST['category'])
-            && !empty($_POST['img'])
-        ) {
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            include 'src/Views/add.php';
+        } else {
             $productName = $_POST['product_name'];
             $productPrice = $_POST['product_price'];
-//            $img = $_FILES['img']['name'];
-//            $img_tmp = $_FILES['img']['tmp_name'];
-//            move_uploaded_file($img_tmp, 'img/' . $img);
+            $img = $_FILES['image']['name'];
+            $img_tmp = $_FILES['image']['tmp_name'];
+            move_uploaded_file($img_tmp, 'img/' . $img);
             $colors = $_POST['colors'];
             $category = $_POST['category'];
-            $this->data->add($productName, $productPrice, $colors, $category);
-            header('location: index.php');
-        } else {
-            include "src/Views/add.php";
+            $this->data->add($productName, $productPrice, $colors, $category, $img);
+            header('location: index.php?page=list');
         }
     }
 
