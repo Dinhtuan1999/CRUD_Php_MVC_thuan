@@ -1,0 +1,53 @@
+.logo {
+    width: 200px;
+}
+
+body {
+    color: #000;
+}
+
+.header .header-border{
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.header .main_nav {
+    margin-left: 520px;
+}
+
+#content .content-form{
+    width: 523px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 42px 16px;
+    margin-top: 66px;
+}
+#content .table {
+    padding: 42px 16px;
+    margin-top: 16px;
+}
+
+.table td,
+.table th {
+    line-height: 38px!important;
+    vertical-align: middle;
+    border-top: 1px;
+}
+
+#content .form-control {
+    color: #000;
+}
+
+.form-check {
+    border: 1px solid #ced4da;
+    border-radius: 1px;
+    padding: 0 12px;
+}
+
+#content .check-name {
+    width: 34px;
+    margin-right: 24px;
+}
+
+#content .lv2 {
+    padding: 0 10px;
+}

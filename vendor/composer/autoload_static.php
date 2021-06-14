@@ -22,7 +22,10 @@ class ComposerStaticInit18dbeb7a2cb51f7a756c0ea2a2caba5e
 
     public static $classMap = array (
         'App\\Controllers\\CartController' => __DIR__ . '/../..' . '/src/Controllers/CartController.php',
+        'App\\Models\\Cart' => __DIR__ . '/../..' . '/src/Models/Cart.php',
         'App\\Models\\CartModel' => __DIR__ . '/../..' . '/src/Models/CartModel.php',
+        'App\\Models\\CategoryModel' => __DIR__ . '/../..' . '/src/Models/CategoryModel.php',
+        'App\\Models\\ColorModel' => __DIR__ . '/../..' . '/src/Models/ColorModel.php',
         'App\\Models\\DBConnect' => __DIR__ . '/../..' . '/src/Models/DBConnect.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );

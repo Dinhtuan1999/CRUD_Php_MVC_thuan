@@ -7,7 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controllers\\CartController' => $baseDir . '/src/Controllers/CartController.php',
+    'App\\Models\\Cart' => $baseDir . '/src/Models/Cart.php',
     'App\\Models\\CartModel' => $baseDir . '/src/Models/CartModel.php',
+    'App\\Models\\CategoryModel' => $baseDir . '/src/Models/CategoryModel.php',
+    'App\\Models\\ColorModel' => $baseDir . '/src/Models/ColorModel.php',
     'App\\Models\\DBConnect' => $baseDir . '/src/Models/DBConnect.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
